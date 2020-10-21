@@ -14,13 +14,11 @@
         <script  defer="" type="text/javascript" src="../javascript.js"> </script>
         <meta name="description" content="Text bei der Google Suche!">  <!--WICHTIG?!-->
 
-        <link rel="preload" as="font" href="../Raumbelegung2.0/templates/fonts/montserrat-v14-latin-700.woff2" type="font/woff2" crossorigin="">
-        <link rel="preload" as="font" href="../Raumbelegung2.0/templates/fonts/montserrat-v14-latin-regular.woff2" type="font/woff2" crossorigin="">
 
         <link rel="icon" type="image/svg+xml" href="../templates/favicons/favicon.svg" sizes="any">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../templates/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../templates/favicons/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#2d89ef">
@@ -61,7 +59,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                        <a class="uk-button uk-button-primary uk-visible@m" href="https://com-software.de/kontakt/">Login</a>
+                                        <button class="uk-button uk-button-primary uk-visible@m" onclick="openForm()">Login</button>
                                 </div>
                         </div>
                     </div>
@@ -71,6 +69,19 @@
                 <div class="uk-sticky-placeholder" style="height: 120px; margin: 0px;" hidden=""></div>
         </header>
             <div id="headerborder"></div>
+
+            <div class="form-popup" id="myForm">
+                <form action="index.html" class="form-container">
+                    <h2>COM-Login</h2>
+    
+                    <label for="name"><b>Login</b></label>
+                    <input type="name" placeholder="Name" name="name" required>
+                    <input type="password" placeholder="Passwort" name="passwort" required>
+    
+                    <button type="submit" class="btn">Einloggen</button>
+                    <button type="submit" class="btn cancel" onclick="closeForm()">Abbrechen</button>
+                </form>
+            </div>
 
             <main id="main" class="uk-margin-large-bottom">
                 <div class="uk-container uk-container-expand"></div>
@@ -84,8 +95,6 @@
                             <div id="content-body">
                                 <div class="uk-margin-top uk-container uk-container-expand">
                                     <div uk-grid="" uk-height-match="" class="uk-grid uk-grid-stack">
-                                        <div class="uk-animation-slide-left uk-width-1-1 uk-width-1-3@m uk-first-column">
-                                        </div>
                                         <div class="uk-animation-slide-right uk-width-1-1 uk-width-2-3@m uk-grid-margin uk-first-column" style="">
                                             <div class="uk-text-lead">
                                                 <p id="Kalender"> 
