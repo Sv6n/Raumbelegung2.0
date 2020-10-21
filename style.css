@@ -66,79 +66,80 @@
 }
 
 
-.Büroplan{
+#Büroplan{
     width: 80%;
     position: absolute;
 	
 
     z-index: 11;
 }
-.Tische{
+#Tische{
 	z-index: 12;
-	color: black;
+
 }
-.TischeO{
+#TischeO{
     position: absolute;
     
 }
-.TischSY1{
+#TischSY1{
 	position: absolute;
 	
 }
-.TischSY2{
+#TischSY2{
 	position: absolute;
 	
 }
-.TischDI1{
+#TischDI1{
 	position: absolute;
 	
 }
-.TischRE1{
+#TischRE1{
     position: absolute;
 
 }
-.TischRE2{
+#TischRE2{
     position: absolute;
 
 }
-.TischHR1{
+#TischHR1{
     position: absolute;
 
 }
-.TischHR2{
+#TischHR2{
     position: absolute;
 
 }
-.TischHS1{
+#TischHS1{
     position: absolute;
 
 
 }
-.TischHS2{
+#TischHS2{
     position: absolute;
 
 }
-.TischHS3{
+#TischHS3{
     position: absolute;
 
 }
-.TischHS4{
+#TischHS4{
     position: absolute;
 
 }
-.TischTL1{
+#TischTL1{
     position: absolute;
 
 }
-.TischTL2{
+#TischTL2{
     position: absolute;
 
 }
-.TischTL3{
+#TischTL3{
     position: absolute;
-
+transform: rotate(90deg);
+top: 50%;
 }
-.TischKI1{
+#TischKI1{
     position: absolute;
 
 }

@@ -10,7 +10,7 @@
 
         <title>Raumbelegung COM Software</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="style2.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="stylesheet" href="style2.css">
         <script  defer="" type="text/javascript" src="javascript.js"> </script>
         <meta name="description" content="Text bei der Google Suche!">  <!--WICHTIG?!-->
 
@@ -38,18 +38,16 @@
         </style>
 
 
-        <header class="uk-background-blend-multiply">
-            <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200; bottom: #sticky-dropbar" class="uk-sticky" style="">
-                <nav id="navbar" class="uk-navbar-container uk-navbar-transparent uk-dark">
+        <header>
+                <nav id="navbar" class="uk-navbar-container uk-navbar-transparent">
                     <div class="uk-container uk-container-expand">
-                        <div uk-navbar="boundary-align: true; align: right; dropbar: true; dropbar-anchor: !.uk-navbar-container" class="uk-navbar">
+                        <div uk-navbar="boundary-align: true; align: right;" class="uk-navbar">
                             <div class="uk-navbar-left">
-                                <a href="" class="uk-navbar-item uk-logo">
+                                <a href="" class="uk-navbar-item">
                                     <img id="logo" src="img/logo-com-software.-sp.png">
                                 </a>
                             </div>
                                 <div id="mainmenu" class="uk-navbar-right">
-                                    <div class="uk-visible@m">
                                         <ul class="uk-navbar-nav">
                                             <li>
                                                 <a href="" class="">Raumbelegung</a>
@@ -58,15 +56,11 @@
                                                 <a href="html/parkplatz.html" class="">Parkplätze</a>
                                             </li>
                                         </ul>
-                                    </div>
-                                        <button class="uk-button uk-button-primary uk-visible@m" onclick="openForm()">Login</button>
+                                    <button class="uk-button uk-button-primary" onclick="openForm()">Login</button>
                                 </div>
                         </div>
                     </div>
                 </nav>
-                    <div class="uk-navbar-dropbar uk-navbar-dropbar-slide" style="height: 0px;"></div>
-            </div>
-                <div class="uk-sticky-placeholder" style="height: 120px; margin: 0px;" hidden=""></div>
         </header>
             <div id="headerborder">
                     <p id="Kalender" class="uk-margin-small-top uk-animation-fade"> 
@@ -88,8 +82,7 @@
                     </div>
 
             <main id="main" class="uk-margin-large-bottom">
-                <div class="uk-container uk-container-expand"></div>
-                    <div class="uk-container uk-margin-small-top">
+                    <div class="uk-container uk-margin-small-top"></div>
                         <h1 id="content-head" class="uk-margin-small-top uk-animation-fade">
                             COM Software GmbH
                             <br>Sitzbelegung
@@ -97,44 +90,41 @@
                     </div>
                         <div id="content">
                             <div id="content-body">
-                                <div class="uk-margin-top uk-container uk-container-expand">
-                                    <div uk-grid="" uk-height-match="" class="uk-grid uk-grid-stack">
-                                        <div class="uk-animation-slide-right uk-width-1-1 uk-width-2-3@m uk-grid-margin uk-first-column" style="">
-                                            <div class="uk-text-lead">
-                                                <p>
-                                                    <div>
-                                                        <img src="Büroplan.png" alt="" id="Büroplan">
-                                                        <div id="Tische">
-                                                            <div id="TischeO">
-                                                                <div id="BüroSy">
-                                                                <img src="Tischturn.jpg" alt="" id="TischSY1" width="50" height="85">
-                                                                <img src="Tischturn.jpg" alt="" id="TischSY2" width="50" height="85">
-                                                                </div>
-                                                                <div id="BüroDi">
-                                                                <img src="Tischturn.jpg" alt="" id="TischDI1" width="50" height="85">
-                                                                </div>
-                                                                <div id="BüroRe">
-                                                                <img src="Tischturn.jpg" alt="" id="TischRE1" width="50" height="85">
-                                                                <img src="Tischturn.jpg" alt="" id="TischRE2" width="50" height="85">
-                                                                </div>
-                                                                <div id="BüroHR">
-                                                                <img src="Tischturn.jpg" alt="" id="TischHR1" width="50" height="85">
-                                                                <img src="Tischturn.jpg" alt="" id="TischHR2" width="50" height="85">
-                                                                </div>
-                                                                <div id="BüroHS">
-                                                                <img src="Tischturn.jpg" alt="" id="TischHS1" width="50" height="85">
-                                                                <img src="Tischturn.jpg" alt="" id="TischHS2" width="50" height="85">
-                                                                <img src="Tischturn.jpg" alt="" id="TischHS3" width="50" height="85">
-                                                                <img src="Tischturn.jpg" alt="" id="TischHS4" width="50" height="85">
-                                                                </div>
-                                                                <div id="BüroTL">
-                                                                <img src="Tischturn.jpg" alt="" id="TischTL1" width="50" height="85">
-                                                                <img src="Tischturn.jpg" alt="" id="TischTL2" width="50" height="85">
-                                                                <img src="Tischturn.jpg" alt="" id="TischTL3" width="50" height="85">
-                                                                </div>
-                                                                <div id="BüroKi">
-                                                                <img src="Tischturn.jpg" alt="" id="TischKI1" width="50" height="85">
-                                                                </div>
+                                <div class="uk-margin-top uk-container">
+                                    <div class="uk-animation-slide-right" style="">
+                                        <div>
+                                            <img src="Büroplan.png" alt="" id="Büroplan">
+                                                <div id="Tische">
+                                                    <div id="TischeO">
+                                                        <div id="BüroSy">
+                                                        <img src="Tischturn.jpg" alt="" id="TischSY1" width="50" height="85">
+                                                        <img src="Tischturn.jpg" alt="" id="TischSY2" width="50" height="85">
+                                                        </div>
+                                                        <div id="BüroDi">
+                                                        <img src="Tischturn.jpg" alt="" id="TischDI1" width="50" height="85">
+                                                        </div>
+                                                        <div id="BüroRe">
+                                                        <img src="Tischturn.jpg" alt="" id="TischRE1" width="50" height="85">
+                                                        <img src="Tischturn.jpg" alt="" id="TischRE2" width="50" height="85">
+                                                        </div>
+                                                        <div id="BüroHR">
+                                                        <img src="Tischturn.jpg" alt="" id="TischHR1" width="50" height="85">
+                                                        <img src="Tischturn.jpg" alt="" id="TischHR2" width="50" height="85">
+                                                        </div>
+                                                        <div id="BüroHS">
+                                                        <img src="Tischturn.jpg" alt="" id="TischHS1" width="50" height="85">
+                                                        <img src="Tischturn.jpg" alt="" id="TischHS2" width="50" height="85">
+                                                        <img src="Tischturn.jpg" alt="" id="TischHS3" width="50" height="85">
+                                                        <img src="Tischturn.jpg" alt="" id="TischHS4" width="50" height="85">
+                                                        </div>
+                                                        <div id="BüroTL">
+                                                        <img src="Tischturn.jpg" alt="" id="TischTL1" width="50" height="85">
+                                                        <img src="Tischturn.jpg" alt="" id="TischTL2" width="50" height="85">
+                                                        <img src="Tischturn.jpg" alt="" id="TischTL3" width="50" height="85">
+                                                        </div>
+                                                        <div id="BüroKi">
+                                                        <img src="Tischturn.jpg" alt="" id="TischKI1" width="50" height="85">
+                                                        </div>
                                                             <!--</div>
                                                                 <div id="TischeU">
                                                                 <div id="BüroOS">
@@ -159,9 +149,6 @@
                                                                 </div>
                                                             </div>-->
                                                         </div>        
-                                                    </div>
-                                                </p>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -170,105 +157,5 @@
             </main>
             
             <h1 id="test"></h1> 
-
-
-
-        
-
-        <footer class="uk-section uk-section-primary">
-            <div id="footer" class="uk-container">
-                <div uk-grid="" class="uk-grid uk-grid-stack">
-                    <div class="footermenu uk-width-1-2@s uk-width-1-4@m uk-text-center uk-text-left@m uk-grid-margin uk-first-column">
-                        <h3 class="uk-margin-remove">Geschäftsfelder </h3>
-                        <ul class="uk-nav uk-nav-default">
-                            <li>
-                                <a href="/geschaftsfelder/software-development/">Software Development</a>
-                            </li>
-                            <li>
-                                <a href="/geschaftsfelder/application-integration/">Application Integration</a>
-                            </li>
-                            <li>
-                                <a href="/geschaftsfelder/business-consulting/">Business Consulting</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footermenu uk-width-1-2@s uk-width-1-4@m uk-text-center uk-text-left@m uk-grid-margin uk-first-column">
-                        <h3 class="uk-margin-remove">Unternehmen </h3>
-                        <ul class="uk-nav uk-nav-default">
-                            <li>
-                                <a href="/unternehmen/unternehmensdaten/">Unternehmensdaten</a>
-                            </li>
-                            <li>
-                                <a href="/unternehmen/news-presse/">News &amp; Presse</a>
-                            </li>
-                            <li>
-                                <a href="/referenzen/">Referenzen</a>
-                            </li>
-                            <li>
-                                <a href="/unternehmen/leitbild/">Leitbild</a>
-                            </li>
-                            <li>
-                                <a href="/unternehmen/aus-und-fortbildung/">Aus- und Fortbildung</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footermenu uk-width-1-2@s uk-width-1-4@m uk-flex-last@m uk-text-center uk-text-left@m uk-grid-margin uk-first-column">
-                        <div uk-grid="" class="uk-child-width-1-2 uk-grid">
-                        <div class="text-center uk-first-column">
-                            <a href="https://www.facebook.com/COMSoftwareGmbH/" class="uk-button uk-button-default">
-                                <span uk-icon="icon: facebook" class="uk-icon">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="facebook">
-                                        <path d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="text-center">
-                            <a href="https://www.xing.com/companies/comsoftwaregmbh" class="uk-button uk-button-default">
-                                <span uk-icon="icon: xing" class="uk-icon">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="xing">
-                                        <path d="M4.4,4.56 C4.24,4.56 4.11,4.61 4.05,4.72 C3.98,4.83 3.99,4.97 4.07,5.12 L5.82,8.16 L5.82,8.17 L3.06,13.04 C2.99,13.18 2.99,13.33 3.06,13.44 C3.12,13.55 3.24,13.62 3.4,13.62 L6,13.62 C6.39,13.62 6.57,13.36 6.71,13.12 C6.71,13.12 9.41,8.35 9.51,8.16 C9.49,8.14 7.72,5.04 7.72,5.04 C7.58,4.81 7.39,4.56 6.99,4.56 L4.4,4.56 L4.4,4.56 Z"></path>
-                                        <path d="M15.3,1 C14.91,1 14.74,1.25 14.6,1.5 C14.6,1.5 9.01,11.42 8.82,11.74 C8.83,11.76 12.51,18.51 12.51,18.51 C12.64,18.74 12.84,19 13.23,19 L15.82,19 C15.98,19 16.1,18.94 16.16,18.83 C16.23,18.72 16.23,18.57 16.16,18.43 L12.5,11.74 L12.5,11.72 L18.25,1.56 C18.32,1.42 18.32,1.27 18.25,1.16 C18.21,1.06 18.08,1 17.93,1 L15.3,1 L15.3,1 Z"></path>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="text-center uk-grid-margin uk-first-column">
-                            <a href="https://twitter.com/COMSoftwareGmbH" class="uk-button uk-button-default">
-                                <span uk-icon="icon: twitter" class="uk-icon">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="twitter">
-                                        <path d="M19,4.74 C18.339,5.029 17.626,5.229 16.881,5.32 C17.644,4.86 18.227,4.139 18.503,3.28 C17.79,3.7 17.001,4.009 16.159,4.17 C15.485,3.45 14.526,3 13.464,3 C11.423,3 9.771,4.66 9.771,6.7 C9.771,6.99 9.804,7.269 9.868,7.539 C6.795,7.38 4.076,5.919 2.254,3.679 C1.936,4.219 1.754,4.86 1.754,5.539 C1.754,6.82 2.405,7.95 3.397,8.61 C2.79,8.589 2.22,8.429 1.723,8.149 L1.723,8.189 C1.723,9.978 2.997,11.478 4.686,11.82 C4.376,11.899 4.049,11.939 3.713,11.939 C3.475,11.939 3.245,11.919 3.018,11.88 C3.49,13.349 4.852,14.419 6.469,14.449 C5.205,15.429 3.612,16.019 1.882,16.019 C1.583,16.019 1.29,16.009 1,15.969 C2.635,17.019 4.576,17.629 6.662,17.629 C13.454,17.629 17.17,12 17.17,7.129 C17.17,6.969 17.166,6.809 17.157,6.649 C17.879,6.129 18.504,5.478 19,4.74"></path>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-width-1-2@s uk-width-1-4@m uk-flex-first@m uk-text-center uk-text-left@m uk-grid-margin uk-first-column">
-                    <h3 class="uk-margin-remove">Kontakt</h3>
-                        <p>COM Software GmbH
-                            <br>Ludwig-Erhard-Straße 6
-                            <br>D-65760 Eschborn
-                        </p>
-                            <p>Tel +49 (6196) 49 666-0
-                                <br>Fax +49 (6196) 49 666-49
-                                <br>Mail info(at)com-software.de
-                            </p>
-                        </div>
-                    </div>
-                    <p class="uk-text-center uk-text-right@m">
-                        <small class="uk-text-small uk-text-muted">© 2020 • COM Software GmbH</small>
-                        <a href="https://com-software.de/kontakt/" class=" uk-margin-small-left">Kontakt</a>
-                        <a href="https://com-software.de/wegbeschreibung/" class=" uk-margin-small-left">Wegbeschreibung</a>
-                        <a href="https://com-software.de/impressum/" class=" uk-margin-small-left">Impressum</a>
-                        <a href="https://com-software.de/unternehmen/disclamer/" class=" uk-margin-small-left">Disclamer</a>
-                        <a href="https://com-software.de/unternehmen/datenschutz/" class=" uk-margin-small-left">Datenschutzerklärung</a>
-                        <a href="https://com-software.de/unternehmen/agb/" class=" uk-margin-small-left">AGB</a>
-                    </p>
-                </div>
-
-        </footer>
-
-
     </body>
 </html>

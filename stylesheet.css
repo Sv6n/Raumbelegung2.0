@@ -1,0 +1,91 @@
+#headline1{
+    text-align: center;
+    color:blue;
+    
+}
+#pictl{
+    background-color: black;
+}
+#Büroplan{
+    width: 80%;
+    position: absolute;
+    right: 200px;
+    top: 400px;
+    z-index: 0;
+    
+}
+#Tische{
+    z-index: 1;
+}
+#TischeO{
+    position: absolute;
+    top: 470px;
+}
+#TischSY1{
+    position: absolute;
+    left: 690px;
+}
+#TischSY2{
+    position: absolute;
+    left: 750px;
+}
+#TischDI1{
+    position: absolute;
+    left: 1000px;
+}
+#TischRE1{
+    position: absolute;
+    left: 1100px;
+}
+#TischRE2{
+    position: absolute;
+    left: 1160px;
+}
+#TischHR1{
+    position: absolute;
+    left: 1260px;
+}
+#TischHR2{
+    position: absolute;
+    left: 1320px;
+}
+#TischHS1{
+    position: absolute;
+    left: 1410px;
+    top: -50px;
+}
+#TischHS2{
+    position: absolute;
+    left: 1470px;
+    top: -50px;
+}
+#TischHS3{
+    position: absolute;
+    left: 1410px;
+    top: 45px;
+}
+#TischHS4{
+    position: absolute;
+    left: 1470px;
+    top: 45px;
+}
+#TischTL1{
+    position: absolute;
+    left: 1600px;
+    top: -40px;
+}
+#TischTL2{
+    position: absolute;
+    left: 1660px;
+    top: -40px;
+}
+#TischTL3{
+    position: absolute;
+    left: 1630px;
+    top: 35px;
+    transform: rotate(90deg);
+}
+#TischKI1{
+    position: absolute;
+    left: 1850px;
+}
